@@ -3,10 +3,10 @@ Import-Module ADDSDeployment
 Install-ADDSForest
 -CreateDnsDelegation:$false `
 -DatabasePath "C:\Windows\NTDS" `
--DomainMode "Win2016" `
+-DomainMode "Default" `
 -DomainName "contoso.local" `
 -DomainNetbiosName "CONTOSO" `
--ForestMode "Win2016" `
+-ForestMode "Default" `
 -InstallDns:$true `
 -LogPath "C:\Windows\NTDS" `
 -NoRebootOnCompletion:$false `
